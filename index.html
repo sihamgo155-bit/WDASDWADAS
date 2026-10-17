@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080809">
+  <title>CIA CASA STREET RP | Command Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="intro" id="intro">
+    <div class="intro-orbit"><div class="orbit-core">CIA</div></div>
+    <div class="intro-brand">CIA <span>CASA STREET</span> RP</div>
+    <p data-i18n="introTag">INTELLIGENCE · OPERATION · ROLEPLAY</p>
+    <div class="loading-track"><span></span></div>
+    <small data-i18n="loading">جاري تهيئة البوابة...</small>
+    <button id="enterPortal" class="primary intro-enter" data-i18n="enter">دخول البوابة</button>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="CIA Casa Street RP home">
+      <span class="brand-seal">CIA</span>
+      <span class="brand-copy"><b>CIA CASA STREET RP</b><small>COMMAND PORTAL</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#home" data-i18n="navHome">الرئيسية</a>
+      <a href="#about" data-i18n="navAbout">عن القطاع</a>
+      <a href="#apply" data-i18n="navApply">التقديم</a>
+      <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+    </nav>
+    <div class="top-actions">
+      <select id="language" aria-label="Select language">
+        <option value="ar">AR · العربية</option>
+        <option value="en">EN · English</option>
+        <option value="es">ES · Español</option>
+      </select>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="eyebrow">CIA CASA STREET RP · بوابة العمليات</span></div>
+        <h1 data-i18n-html="heroTitle">أكثر من مجرد لعبة<br><em>إنه عالم الاستخبارات</em></h1>
+        <p class="hero-description" data-i18n="heroText">انضم إلى قطاع CIA CASA STREET RP، كن جزءاً من فريق النخبة، نفّذ المهام، طوّر رتبتك، واصنع قصتك داخل عالم الـ Roleplay.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#apply" data-i18n="applyNow">ابدأ التقديم ↗</a>
+          <a class="secondary" href="#about" data-i18n="learnMore">اكتشف القطاع</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>RP</strong><span data-i18n="stat1">تجربة خيالية</span></div>
+          <div><strong>03</strong><span data-i18n="stat2">لغات</span></div>
+          <div><strong>24/7</strong><span data-i18n="stat3">بوابة إلكترونية</span></div>
+        </div>
+      </div>
+      <div class="hero-stamp"><span>CLASSIFIED</span><b>CASA</b><small>ROLEPLAY DIVISION</small></div>
+      <div class="hero-bottom-line"><span></span> <small>SECURE ACCESS · MEMBER RECRUITMENT</small></div>
+    </section>
+
+    <section class="ticker" aria-label="portal status"><span class="pulse-dot"></span><span data-i18n="ticker">نظام التجنيد متاح — التقديم مفتوح للأعضاء الجدد</span><span class="ticker-code">CSRP / 001</span></section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <div class="eyebrow"><span class="red-line"></span><span data-i18n="aboutEyebrow">من نحن</span></div>
+        <h2 data-i18n-html="aboutTitle">الانضباط. السرية.<em> الولاء.</em></h2>
+        <p data-i18n="aboutText">قطاع خيالي مخصص للألعاب والـ Roleplay، يجمع بين التنظيم والعمل الجماعي وتطوير الشخصيات داخل السيرفر.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">◈</div><h3 data-i18n="feature1Title">عمليات منظمة</h3><p data-i18n="feature1Text">مهام وتحديات داخل عالم اللعبة بإشراف الإدارة.</p><span class="card-index">01 / OPS</span></article>
+        <article class="feature-card"><div class="feature-icon">♜</div><h3 data-i18n="feature2Title">نظام رتب</h3><p data-i18n="feature2Text">تدرّج واضح في الرتب حسب النشاط والقرارات الإدارية.</p><span class="card-index">02 / RANKS</span></article>
+        <article class="feature-card"><div class="feature-icon">⌘</div><h3 data-i18n="feature3Title">فريق النخبة</h3><p data-i18n="feature3Text">تعاون، احترام القوانين، وتطوير تجربة لعب أفضل للجميع.</p><span class="card-index">03 / TEAM</span></article>
+      </div>
+    </section>
+
+    <section class="section application-section" id="apply">
+      <div class="application-intro">
+        <div class="eyebrow"><span class="red-line"></span><span data-i18n="applyEyebrow">بوابة التجنيد</span></div>
+        <h2 data-i18n-html="applyTitle">قدّم طلبك.<br><em>أثبت جاهزيتك.</em></h2>
+        <p data-i18n="applyText">أكمل بياناتك واجتز اختبار القبول. سيظهر طلبك في لوحة الإدارة بعد ربط الموقع بالخادم.</p>
+        <div class="application-note"><span>!</span><p data-i18n="applyNote">هذا موقع Roleplay خيالي خاص بالألعاب، وليس موقعاً حكومياً رسمياً.</p></div>
+      </div>
+      <form id="applicationForm" class="application-form">
+        <div class="form-top"><span class="form-chip">APPLICATION / 01</span><span class="form-status"><i></i><span data-i18n="formOpen">التقديم مفتوح</span></span></div>
+        <h3 data-i18n="formTitle">استمارة الانضمام</h3>
+        <div class="form-grid">
+          <label><span data-i18n="fullName">الاسم الكامل</span><input name="fullName" required maxlength="70" placeholder="..." data-i18n-placeholder="fullNamePlaceholder"></label>
+          <label><span data-i18n="discordName">اسم المستخدم في Discord</span><input name="discordName" required maxlength="50" placeholder="username" data-i18n-placeholder="discordPlaceholder"></label>
+          <label><span data-i18n="age">العمر</span><input name="age" type="number" min="13" max="99" required placeholder="18"></label>
+          <label><span data-i18n="timezone">أوقات النشاط</span><select name="availability" required><option value="" data-i18n="choose">اختر...</option><option data-i18n="timeDay">نهاراً</option><option data-i18n="timeNight">ليلاً</option><option data-i18n="timeBoth">نهاراً وليلاً</option></select></label>
+          <label class="full"><span data-i18n="whyJoin">لماذا تريد الانضمام؟</span><textarea name="motivation" required minlength="20" maxlength="600" rows="4" placeholder="..." data-i18n-placeholder="motivationPlaceholder"></textarea></label>
+        </div>
+        <label class="agree-row"><input type="checkbox" name="agree" required><span data-i18n="agree">أوافق على احترام قوانين السيرفر وتعليمات الإدارة.</span></label>
+        <button class="primary submit-btn" type="submit"><span data-i18n="submitApplication">إرسال طلب الانضمام</span><b>↗</b></button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span class="brand-seal">CIA</span><span class="brand-copy"><b>CIA CASA STREET RP</b><small>INTELLIGENCE · OPERATION · ROLEPLAY</small></span></a>
+    <p data-i18n="footerText">بوابة Roleplay خيالية مستقلة وغير تابعة لأي جهة حكومية.</p>
+    <span class="footer-code">© <span id="year"></span> CSRP · ALL RIGHTS RESERVED</span>
+  </footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080809"><title>Admin | CIA CASA STREET RP</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="admin.css"></head><body>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-seal">CIA</span><span class="brand-copy"><b>CIA CASA STREET RP</b><small>ADMIN COMMAND</small></span></a><div class="top-actions"><select id="adminLanguage"><option value="ar">AR · العربية</option><option value="en">EN · English</option><option value="es">ES · Español</option></select><a class="secondary" href="index.html" id="backHome">العودة للموقع</a></div></header>
+<section class="admin-gate" id="adminGate">
+<div class="gate-card">
+  <div class="profile-avatar">♛</div>
+  <div class="gate-kicker">RESTRICTED ACCESS · CSRP</div>
+  <h1 id="gateTitle">منطقة الإدارة</h1>
+  <p id="gateDesc">أدخل رمز الوصول للمتابعة</p>
+  <form id="gateForm">
+    <input id="adminCode" type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="••••" aria-label="Access code" required>
+    <button class="primary" type="submit" id="gateSubmit">دخول آمن ↗</button>
+    <p class="gate-error" id="gateError" role="alert"></p>
+  </form>
+  <a href="index.html" class="gate-back" id="gateBack">العودة للرئيسية</a>
+</div>
+</section>
+<main class="admin-layout" id="adminDashboard" hidden><aside class="admin-sidebar"><div class="admin-profile"><div class="profile-avatar">♛</div><b id="adminName">ADMIN COMMAND</b><small id="adminState">DEMO PREVIEW</small></div><button class="side-item active" data-panel="overview">▦ <span data-admin="overview">نظرة عامة</span></button><button class="side-item" data-panel="applications">▤ <span data-admin="applications">الطلبات</span><b id="pendingCount">0</b></button><button class="side-item" data-panel="members">♙ <span data-admin="members">الأعضاء</span></button><button class="side-item" data-panel="ranks">♜ <span data-admin="ranks">الرتب</span></button><button class="side-item" data-panel="tasks">⌘ <span data-admin="tasks">المهام</span></button><button class="side-item" data-panel="settings">⚙ <span data-admin="settings">الإعدادات</span></button></aside>
+<section class="admin-main"><div class="admin-header"><div><div class="eyebrow"><span class="pulse-dot"></span><span id="dashEyebrow">COMMAND CENTER / INTERNAL</span></div><h1 id="dashTitle">لوحة الإدارة</h1><p id="dashSubtitle">إدارة الطلبات والأعضاء والرتب والمهام من مكان واحد.</p></div><span class="demo-badge" id="demoBadge">وضع العرض التجريبي</span></div>
+<div id="adminAlert" class="admin-alert">هذه لوحة واجهة تجريبية. الإدارة الحقيقية عبر الأجهزة تحتاج إعداد Supabase وتسجيل دخول موثّق.</div>
+<div class="stat-grid"><article><small id="labelPending">الطلبات المعلقة</small><strong id="statPending">0</strong><span>↗ <i id="statPendingHint">بانتظار المراجعة</i></span></article><article><small id="labelAccepted">الأعضاء المقبولون</small><strong id="statAccepted">0</strong><span>◈ <i id="statAcceptedHint">قائمة الأعضاء</i></span></article><article><small id="labelRejected">المرفوضة</small><strong id="statRejected">0</strong><span>— <i id="statRejectedHint">قرارات الإدارة</i></span></article><article><small id="labelTasks">المهام النشطة</small><strong id="statTasks">0</strong><span>⌘ <i id="statTasksHint">توزيع المهام</i></span></article></div>
+<div class="admin-panel" id="panelContent"><div class="panel-heading"><div><small>RECENT ACTIVITY</small><h2 id="panelTitle">آخر الطلبات</h2></div><button class="secondary" id="refreshDemo">↻ <span id="refreshText">تحديث</span></button></div><div class="empty-state"><div>▤</div><h3 id="emptyTitle">لا توجد طلبات متصلة</h3><p id="emptyText">عند إعداد قاعدة البيانات، ستظهر الطلبات الجديدة هنا للمراجعة واتخاذ القرار.</p><a class="primary" href="index.html#apply" id="testApply">فتح استمارة التقديم ↗</a></div></div>
+<div class="admin-panel"><div class="panel-heading"><div><small>QUICK ACTIONS</small><h2 id="quickTitle">إجراءات سريعة</h2></div></div><div class="quick-grid"><button data-panel="applications">＋ <span id="quickApps">مراجعة الطلبات</span></button><button data-panel="members">♙ <span id="quickMembers">إدارة الأعضاء</span></button><button data-panel="ranks">♜ <span id="quickRanks">تعديل الرتب</span></button><button data-panel="tasks">⌘ <span id="quickTasks">توزيع المهام</span></button></div></div>
+</section></main><script src="config.js"></script><script src="admin.js"></script></body></html>
